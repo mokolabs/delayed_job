@@ -32,7 +32,7 @@ module Delayed
 
         count = result.sum
 
-        Manager.scale_down if count.zero? && Job.auto_scale && Job.count == 0
+        Manager.scale_down if count.zero? && Delayed::Job.auto_scale && Delayed::Job.count == 0
 
         break if $exit
 
