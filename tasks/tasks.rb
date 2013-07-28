@@ -1,6 +1,5 @@
 # Re-definitions are appended to existing tasks
 task :environment
-task :merb_env
 
 namespace :jobs do
   desc "Clear the delayed_job queue."
